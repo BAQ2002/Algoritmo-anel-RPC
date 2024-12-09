@@ -16,6 +16,12 @@ Quando um nó recebe uma mensagem com um timestamp, ele a propaga até que a men
 - **Eleição do coordenador**: A eleição do coordenador é feita com base no maior ID entre os nós.
 - **Falhas e reconexões**: O sistema lida com falhas de comunicação entre os nós, tentando reconectar ou contornar erros.
 
+## Arquitetura
+
+- **Network.py**: Classe referente à rede para definição do anel de comunicação.
+- **Node.py**: Classe referente aos nós, onde cada um terá: ID, rélogio, nó sucessor, nó antecessor e tipo(comum ou coordenador).
+- **run.py**: Arquivo para inicialização dos nós em uma rede simulada.
+
 ## Tecnologias Utilizadas
 
 - **Python 3**: Linguagem de programação usada para implementar a solução.
@@ -33,10 +39,4 @@ Quando um nó recebe uma mensagem com um timestamp, ele a propaga até que a men
   - `threading`
   - `datetime`
 
-### Passos para Executar
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/seu-usuario/sync-time-network.git
-   cd sync-time-network
+### execute o arquivo 'run.py'
